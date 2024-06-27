@@ -2,7 +2,7 @@
 
 ## 1. Projektübersicht
 
-**Beschreibung**: Dieses Projekt wurde uns ein Backend und ein Frontend zur verfügung gestellt. Wir haben dann dazu zwei Dockerfiles und das docker-compose.yml file geschrieben.
+**Beschreibung**: Bei diesem Projekt wurde uns ein Backend und ein Frontend zur verfügung gestellt. Wir haben dann dazu zwei Dockerfiles und das docker-compose.yml file geschrieben.
 Zum Schluss haben wir dann die App Über Azure depolyed.
 
 ### **Technologien**:
