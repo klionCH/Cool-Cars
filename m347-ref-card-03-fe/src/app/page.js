@@ -9,7 +9,7 @@ export default function Home() {
   const [cars, setCars] = useState([])
 
   function buttonHandler() {
-    fetch("http://localhost:8080/cars")
+    fetch("https://coolcarsbe.azurewebsites.net/cars")
       .then(response => response.json())
       .then(data => setCars(data))
   }
