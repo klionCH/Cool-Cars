@@ -112,6 +112,19 @@ networks:
 
 # 7. Deployen auf Azure
 
+![[fetch.jpg]]
+Das sind die Zeilen, die im Backend abgeändert wurden. Die Annotation "@CrossOrigin" ermöglicht Cross-Origin Requests von allen Ursprüngen, sodass Anfragen von verschiedenen Domains an diesen Controller gesendet werden können. Das Sternchen (`*`) steht dabei für alle Ursprünge. Dies ist besonders nützlich, wenn Frontend und Backend auf verschiedenen Domains laufen.
+
+
+
+![[fetchreal.jpg]]
+Hier ist die Funktion aus dem Frontend, die die Daten aus dem Backen fetchet
+
+
+![[zweiWebApps.jpg]]
+Das sind die Beiden Webapps auf denen das Backend und das Frontend laufen. 
+
+
 ![[repositorys.jpg]]
 
 
