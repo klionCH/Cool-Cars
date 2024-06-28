@@ -1,5 +1,11 @@
 # Projektname: CoolCars Deployment mit Docker und Azure
 
+#### Das Backend:
+https://coolcarsbe.azurewebsites.net/cars
+
+#### Das Frontend:
+https://coolcarsfe.azurewebsites.net/
+
 ## 1. Projektübersicht
 
 **Beschreibung**: Bei diesem Projekt wurde uns ein Backend und ein Frontend zur verfügung gestellt. Wir haben dann dazu zwei Dockerfiles und das docker-compose.yml file geschrieben.
