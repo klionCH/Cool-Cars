@@ -1,8 +1,14 @@
 # Projektname: CoolCars Deployment mit Docker und Azure
 
+#### Das Backend:
+https://coolcarsbe.azurewebsites.net/cars
+
+#### Das Frontend:
+https://coolcarsfe.azurewebsites.net/
+
 ## 1. Projektübersicht
 
-**Beschreibung**: Dieses Projekt wurde uns ein Backend und ein Frontend zur verfügung gestellt. Wir haben dann dazu zwei Dockerfiles und das docker-compose.yml file geschrieben.
+**Beschreibung**: Bei diesem Projekt wurde uns ein Backend und ein Frontend zur verfügung gestellt. Wir haben dann dazu zwei Dockerfiles und das docker-compose.yml file geschrieben.
 Zum Schluss haben wir dann die App Über Azure depolyed.
 
 ### **Technologien**:
@@ -112,11 +118,18 @@ networks:
 
 # 7. Deployen auf Azure
 
-![[repositorys.jpg]]
+![alt text](https://github.com/klionCH/Cool-Cars/blob/main/fetch.jpg)
+Das sind die Zeilen, die im Backend abgeändert wurden. Die Annotation "@CrossOrigin" ermöglicht Cross-Origin Requests von allen Ursprüngen, sodass Anfragen von verschiedenen Domains an diesen Controller gesendet werden können. Das Sternchen (`*`) steht dabei für alle Ursprünge. Dies ist besonders nützlich, wenn Frontend und Backend auf verschiedenen Domains laufen.
 
 
-![[web-app-erstellen.jpg]]
+![alt text](https://github.com/klionCH/Cool-Cars/blob/main/fetchreal.jpg)
+Hier ist die Funktion aus dem Frontend, die die Daten aus dem Backen fetched
+
+![alt text](https://github.com/klionCH/Cool-Cars/blob/main/zweiWebApps.jpg)
+Das sind die Beiden Webapps auf denen das Backend und das Frontend laufen. 
+
+
+![alt text](https://github.com/klionCH/Cool-Cars/blob/main/repositorys.jpg)
 
 
 
-![[web-app.jpg]]
