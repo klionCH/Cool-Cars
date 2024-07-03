@@ -4,4 +4,5 @@ COPY . .
 RUN npm ci
 RUN npm run build
 EXPOSE 3000
-ENTRYPOINT ["npm", "start"]
+ENV BACKEND_URL=${BACKEND_URL}
+CMD ["npm", "start"]

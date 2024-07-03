@@ -4,14 +4,13 @@ import {useState} from "react";
 import CarForm from "@/app/carform/page";
 import Link from "next/link";
 
-
 export default function Home() {
   const [cars, setCars] = useState([])
 
-  function buttonHandler() {
-    fetch("https://coolcarsbe.azurewebsites.net/cars")
-      .then(response => response.json())
-      .then(data => setCars(data))
+  async function buttonHandler() {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/cars`);
+    const data = await response.json();
+    setCars(data);
   }
 
   return (

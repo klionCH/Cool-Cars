@@ -6,4 +6,5 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=builder /build/target/*.jar app.jar
 EXPOSE 8080
+ENV FRONTEND_URL=${FRONTEND_URL}
 ENTRYPOINT ["java", "-jar", "app.jar"]

@@ -1,23 +1,21 @@
 version: '3.8'
 
 services:
-  frontend:
-    build:
-      context: ./m347-ref-card-03-fe
-    networks:
-      - cool-cars-network
-    ports:
-      - "3000:3000"
-    restart: always
-
   backend:
-    build:
-      context: ./m347-ref-card-03-be
-    networks:
-      - cool-cars-network
+    image: coolcarssvegiu.azurecr.io/cool-cars-backend:1.1
     ports:
       - "8080:8080"
-    restart: always
+    environment:
+      - FRONTEND_URL=http://localhost:3000
+    networks:
+      - cool-cars-network
+
+  frontend:
+    image: coolcarssvegiu.azurecr.io/cool-cars-frontend:1.1
+    ports:
+      - "80:80"
+    networks:
+      - cool-cars-network
 
 networks:
   cool-cars-network:
